@@ -33,3 +33,7 @@ def test_ignore_large_numbers():
 #Test case for supporting multi-charcter delimiters
 def test_multi_char_delimiters():
     assert add("//[***]\n1***2***3")==6
+
+#Test case for suporting multiple delimiters
+def test_multiple_delimiters():
+    assert add("//[*][%]\n1*2%3")==6
