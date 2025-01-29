@@ -29,3 +29,7 @@ def test_negative_numbers():
 #Test case for ignoring numbers>1000
 def test_ignore_large_numbers():
     assert add("2,1001")==2
+
+#Test case for supporting multi-charcter delimiters
+def test_multi_char_delimiters():
+    assert add("//[***]\n1***2***3")==6
