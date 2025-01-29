@@ -16,3 +16,7 @@ def test_multiple_numbers():
 #Test case for handling newlines as delimiters
 def test_newline_delimiter():
     assert add("1\n2,3")==6
+
+#Test case for supporting custom delimiters
+def test_custom_delimiters():
+    assert add("//;\n1;2")==3
