@@ -20,3 +20,8 @@ def test_newline_delimiter():
 #Test case for supporting custom delimiters
 def test_custom_delimiters():
     assert add("//;\n1;2")==3
+
+#Test case for handling negative numbers
+def test_negative_numbers():
+    with pytest.raises(ValueError,match="negatives not allowed: -1,-3"):
+        add("1,-1,2,-3")
