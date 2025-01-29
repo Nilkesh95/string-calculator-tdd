@@ -12,3 +12,7 @@ def test_two_numbers():
 #Test case for handling multiple numbers
 def test_multiple_numbers():
     assert add("1,2,3,4")==10
+
+#Test case for handling newlines as delimiters
+def test_newline_delimiter():
+    assert add("1\n2,3")==6
